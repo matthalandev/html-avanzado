@@ -1,0 +1,43 @@
+<template id="jorge-copy">
+    <p>© Jorge González Villanueva - <span class="fecha">2018</span></p>
+</template>
+
+<script>
+    class JorgeCopy extends HTMLElement{
+        constructor(){
+            super();
+
+            console.log("creando etiqueta jorge-copy");
+            var shadowRoot = this.attachShadow({mode: 'open'});
+
+            var currentDocument = document.currentScript.ownerDocument;
+            var template = currentDocument.querySelector("#jorge-copy");
+            var instance = template.content.cloneNode(true);
+            shadowRoot.appendChild(instance);
+        }
+
+        static get observedAttributes(){
+            return ['fecha'];
+        }
+
+        attributeChangedCallback(attrName, oldVal, newVal){
+            if(attrName == 'fecha'){
+                var shadowRoot = this.shadowRoot;
+                shadowRoot.querySelector(".fecha").innerHTML = newVal;
+            }
+        }
+
+        get fecha(){
+            return this.hasAttribute('fecha');
+        }
+
+        set fecha(val){
+            if(val){
+                this.setAttribute('fecha', val);
+            }else{
+                this.removeAttribute('fecha');
+            }
+        }
+    }
+    customElements.define("jorge-copy", JorgeCopy);
+</script>

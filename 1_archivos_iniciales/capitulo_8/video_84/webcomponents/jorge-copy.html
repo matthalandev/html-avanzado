@@ -1,0 +1,20 @@
+<template id="jorge-copy">
+    <p>© Jorge González Villanueva - 2018</p>
+</template>
+
+<script>
+    class JorgeCopy extends HTMLElement{
+        constructor(){
+            super();
+
+            console.log("creando etiqueta jorge-copy");
+            var shadowRoot = this.attachShadow({mode: 'open'});
+
+            var currentDocument = document.currentScript.ownerDocument;
+            var template = currentDocument.querySelector("#jorge-copy");
+            var instance = template.content.cloneNode(true);
+            shadowRoot.appendChild(instance);
+        }
+    }
+    customElements.define("jorge-copy", JorgeCopy);
+</script>

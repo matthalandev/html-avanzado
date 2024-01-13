@@ -1,0 +1,125 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 0.86em;
+}
+
+header{
+    padding: 0 20px 5px 20px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+    display: block;
+}
+h1{
+    display: inline-block;
+    margin-right: 15px;
+    color: #405274;
+    margin-bottom: 0;
+}
+h2{
+    display: inline-block;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+header ul{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+header li{
+    width: auto;
+    display: inline-block;
+    position: unset;
+    height: auto;
+    background: transparent;
+    overflow: visible;
+}
+header li a{
+    position: unset;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: -1.5em;
+    display: block;
+}
+header li a:before{
+    content: "- ";
+}
+
+
+ul{
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    width: 50%;
+}
+li{
+    display: block;
+    list-style: none;
+    margin-top: 10px;
+    background-color: #c4e4ff;
+    border-radius: 4px;
+
+    position: relative;
+    height: 65px;
+
+    overflow: hidden;
+}
+li:nth-child(even){
+    left: 50%;
+}
+li a{
+    text-decoration: none;
+    color: #405274;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+}
+li img{
+    width: 55px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.botonera{
+    vertical-align: middle;
+    float: right;
+}
+.botonera button{
+    display: block;
+    width: 45px;
+    height: 22px;
+    background-color: #777;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+#div_select{
+    margin: 10px auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #aaa;
+}
+
+
+.desaparece{
+    display: none;
+    visibility: hidden;
+}
+
+
+span.oculta{
+    text-indent: -9999px;
+    display: inline-block;
+}
+button.oculta{
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}

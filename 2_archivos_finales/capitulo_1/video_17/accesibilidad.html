@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Accesibilidad</h1>
+    <h2>acceskey</h2>
+    <nav>
+    <ul>
+        <li><a href="https://www.google.es" accesskey="g" >Google</a></li>
+        <li><a href="https://developer.mozilla.org/es/" accesskey="m" >MDN</a></li>
+        <li><a href="https://www.linkedin.com/learning/" accesskey="l">Linkedin Learning</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <ul>
+        <li>
+            <a href="#" tabindex="1">
+                <img src="img/user1.jpg" alt="Fotografía de Jin Wo" title="Jin Wo"/>
+                <span class="oculta">Usuario 1</span>
+                <span class="botonera">
+                        <button  class="oculta">info</button>
+                        <button >email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="4">
+                <img src="img/user2.jpg" alt="Fotografía de John Dow" title="John Dow"/>
+                <span>Usuario 2</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="2" alt="Fotografía de Simone Lopes" title="Simone Lopes">
+                <img src="img/user3.jpg"/>
+                <span>Usuario 3</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="5" alt="Fotografía de Ana González" title="Ana González">
+                <img src="img/user4.jpg"/>
+                <span>Usuario 4</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li class="desaparece">
+            <a href="#"  tabindex="3" alt="Fotografía de Tom Franklin" title="Tom Franklin">
+                <img src="img/user5.jpg"/>
+                <span>Usuario 5</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+    </ul>
+    <div id="div_select">
+        <label for="usuario">Usuario</label>
+        <select id="usuario">
+            <option value="u1">Usuario 1</option>
+            <option value="u2">Usuario 2</option>
+            <option value="u3">Usuario 3</option>
+            <option value="u4">Usuario 4</option>
+            <option value="u5">Usuario 5</option>
+        </select>
+    </div>
+
+    <div id="mi-slider">
+        <span id="slider-label">Volumen: </span>
+        <div id="slider-rail">
+            <button id="slider-handler"  role="slider"
+                    aria-valuemin="0" aria-valuemax="100"
+                    aria-now="20" aria-labelledby="slider-label">
+            </button>
+        </div>
+        <span id="volumen" aria-live="polite">20</span>
+    </div>
+</main>
+</body>
+</html>

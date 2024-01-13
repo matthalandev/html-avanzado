@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Accesibilidad</h1>
+    <h2>acceskey</h2>
+    <nav>
+    <ul>
+        <li><a href="https://www.google.es" accesskey="g" >Google</a></li>
+        <li><a href="https://developer.mozilla.org/es/" accesskey="m" >MDN</a></li>
+        <li><a href="https://www.linkedin.com/learning/" accesskey="l">Linkedin Learning</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <ul>
+        <li>
+            <a href="#" tabindex="1">
+                <img src="img/user1.jpg"/>
+                <span>Usuario 1</span>
+                <span class="botonera">
+                        <button >info</button>
+                        <button >email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="4">
+                <img src="img/user2.jpg"/>
+                <span>Usuario 2</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="2">
+                <img src="img/user3.jpg"/>
+                <span>Usuario 3</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="5">
+                <img src="img/user4.jpg"/>
+                <span>Usuario 4</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  tabindex="3">
+                <img src="img/user5.jpg"/>
+                <span>Usuario 5</span>
+                <span class="botonera">
+                        <button>info</button>
+                        <button>email</button>
+                    </span>
+            </a>
+        </li>
+    </ul>
+    <div id="div_select">
+        <label for="usuario">Usuario</label>
+        <select id="usuario">
+            <option value="u1">Usuario 1</option>
+            <option value="u2">Usuario 2</option>
+            <option value="u3">Usuario 3</option>
+            <option value="u4">Usuario 4</option>
+            <option value="u5">Usuario 5</option>
+        </select>
+    </div>
+
+</main>
+</body>
+</html>
